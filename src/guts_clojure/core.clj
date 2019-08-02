@@ -61,5 +61,5 @@
   []
   (def game-options (collect-game-start-data))
   (def game-players (player-list (Integer/parseInt(:opponents game-options)) (Float/parseFloat(:wallet game-options))))
-  (println game-players))
+  (play-round 1 0 game-players))
 
